@@ -6,14 +6,53 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		509946F02EE317FC00DC75DB /* PuzzleGotchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509946EF2EE317FC00DC75DB /* PuzzleGotchiApp.swift */; };
+		509946F22EE3180100DC75DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509946F12EE3180100DC75DB /* ContentView.swift */; };
+		5099471E2EE318F400DC75DB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5099471D2EE318F400DC75DB /* README.md */; };
+		509947282EE392E600DC75DB /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509947272EE392E600DC75DB /* ShopView.swift */; };
+		5099472A2EE393EC00DC75DB /* PuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509947292EE393EC00DC75DB /* PuzzleView.swift */; };
+		5099472C2EE393F200DC75DB /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099472B2EE393F200DC75DB /* LibraryView.swift */; };
+		5099473E2EE395FB00DC75DB /* BinarioGameViewsLevelSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099473D2EE395FB00DC75DB /* BinarioGameViewsLevelSelectionView.swift */; };
+		509947402EE3964E00DC75DB /* BinarioGameBINARIO_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5099473F2EE3964E00DC75DB /* BinarioGameBINARIO_README.md */; };
+		509947422EE3966A00DC75DB /* BinarioGameQUICK_START.md in Resources */ = {isa = PBXBuildFile; fileRef = 509947412EE3966A00DC75DB /* BinarioGameQUICK_START.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		509946EF2EE317FC00DC75DB /* PuzzleGotchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGotchiApp.swift; sourceTree = "<group>"; };
+		509946F12EE3180100DC75DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5099471D2EE318F400DC75DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		509947272EE392E600DC75DB /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		509947292EE393EC00DC75DB /* PuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleView.swift; sourceTree = "<group>"; };
+		5099472B2EE393F200DC75DB /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		5099473D2EE395FB00DC75DB /* BinarioGameViewsLevelSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarioGameViewsLevelSelectionView.swift; sourceTree = "<group>"; };
+		5099473F2EE3964E00DC75DB /* BinarioGameBINARIO_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BinarioGameBINARIO_README.md; sourceTree = "<group>"; };
+		509947412EE3966A00DC75DB /* BinarioGameQUICK_START.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BinarioGameQUICK_START.md; sourceTree = "<group>"; };
 		50B483E92EE2423A0090DC83 /* PuzzleGotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleGotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		509947262EE391E700DC75DB /* Exceptions for "Components" folder in "PuzzleGotchi" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TabBarButton.swift,
+			);
+			target = 50B483E82EE2423A0090DC83 /* PuzzleGotchi */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		50B483EB2EE2423A0090DC83 /* PuzzleGotchi */ = {
+		509947212EE391A100DC75DB /* Components */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PuzzleGotchi;
+			exceptions = (
+				509947262EE391E700DC75DB /* Exceptions for "Components" folder in "PuzzleGotchi" target */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		509947432EE3983600DC75DB /* Binario */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Binario;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,17 +71,19 @@
 		50B483E02EE2423A0090DC83 = {
 			isa = PBXGroup;
 			children = (
-				50B483EB2EE2423A0090DC83 /* PuzzleGotchi */,
-				50B483EA2EE2423A0090DC83 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		50B483EA2EE2423A0090DC83 /* Products */ = {
-			isa = PBXGroup;
-			children = (
 				50B483E92EE2423A0090DC83 /* PuzzleGotchi.app */,
+				509946EF2EE317FC00DC75DB /* PuzzleGotchiApp.swift */,
+				509947432EE3983600DC75DB /* Binario */,
+				509946F12EE3180100DC75DB /* ContentView.swift */,
+				5099472B2EE393F200DC75DB /* LibraryView.swift */,
+				509947292EE393EC00DC75DB /* PuzzleView.swift */,
+				509947272EE392E600DC75DB /* ShopView.swift */,
+				509947212EE391A100DC75DB /* Components */,
+				5099471D2EE318F400DC75DB /* README.md */,
+				5099473D2EE395FB00DC75DB /* BinarioGameViewsLevelSelectionView.swift */,
+				5099473F2EE3964E00DC75DB /* BinarioGameBINARIO_README.md */,
+				509947412EE3966A00DC75DB /* BinarioGameQUICK_START.md */,
 			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +102,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				50B483EB2EE2423A0090DC83 /* PuzzleGotchi */,
+				509947432EE3983600DC75DB /* Binario */,
 			);
 			name = PuzzleGotchi;
 			packageProductDependencies = (
@@ -95,7 +136,7 @@
 			mainGroup = 50B483E02EE2423A0090DC83;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 50B483EA2EE2423A0090DC83 /* Products */;
+			productRefGroup = 50B483E02EE2423A0090DC83;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -109,6 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509947402EE3964E00DC75DB /* BinarioGameBINARIO_README.md in Resources */,
+				5099471E2EE318F400DC75DB /* README.md in Resources */,
+				509947422EE3966A00DC75DB /* BinarioGameQUICK_START.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				509946F22EE3180100DC75DB /* ContentView.swift in Sources */,
+				509946F02EE317FC00DC75DB /* PuzzleGotchiApp.swift in Sources */,
+				509947282EE392E600DC75DB /* ShopView.swift in Sources */,
+				5099472C2EE393F200DC75DB /* LibraryView.swift in Sources */,
+				5099473E2EE395FB00DC75DB /* BinarioGameViewsLevelSelectionView.swift in Sources */,
+				5099472A2EE393EC00DC75DB /* PuzzleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
