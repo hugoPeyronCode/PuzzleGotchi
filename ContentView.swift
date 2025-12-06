@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State private var selectedTab = 1 // Start with Puzzle tab (middle)
-  @State private var gameManager = GameManager()
+  @State private var selectedTab = 0 // 0 = Shop, 1 = Library
   
   var body: some View {
     VStack {
@@ -23,20 +22,17 @@ struct ContentView: View {
       TabBar
       
     }
-    .environment(gameManager)
   }
   
   @ViewBuilder
   private var selectedTabContent: some View {
     switch selectedTab {
     case 0:
-      ShopView()
+      PuzzleShopView()
     case 1:
-      PuzzleView()
-    case 2:
       LibraryView()
     default:
-      PuzzleView()
+      PuzzleShopView()
     }
   }
   
@@ -44,7 +40,7 @@ struct ContentView: View {
   private var TabBar : some View {
     GlassEffectContainer(spacing: 20) {
       HStack(spacing: 40) {
-        // Shop Tab (Left)
+        // Shop Tab
         TabBarButton(
           icon: "cart.fill",
           title: "Shop",
@@ -53,22 +49,13 @@ struct ContentView: View {
           selectedTab = 0
         }
         
-        // Puzzle Tab (Middle)
-        TabBarButton(
-          icon: "puzzlepiece.fill",
-          title: "Puzzle",
-          isSelected: selectedTab == 1
-        ) {
-          selectedTab = 1
-        }
-        
-        // Library Tab (Right)
+        // Library Tab
         TabBarButton(
           icon: "books.vertical.fill",
           title: "Library",
-          isSelected: selectedTab == 2
+          isSelected: selectedTab == 1
         ) {
-          selectedTab = 2
+          selectedTab = 1
         }
       }
       .padding(.horizontal, 30)

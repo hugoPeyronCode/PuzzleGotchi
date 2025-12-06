@@ -1,10 +1,18 @@
+//
+//  ShopViewModel.swift
+//  PuzzleGotchi
+//
+//  Created by Hugo Peyron on 06/12/2025.
+//
+
+
 import SwiftUI
 import SwiftUI
 
 @Observable
 class ShopViewModel {
-  var packs: [LevelPack] = []
-  var purchasingPack: LevelPack? = nil
+  var packs: [PuzzlePack] = []
+  var purchasingPack: PuzzlePack? = nil
   var showPurchaseSuccess = false
   
   init() {
@@ -13,7 +21,7 @@ class ShopViewModel {
   
   private func generatePacks() {
     packs = PuzzleType.allCases.map { type in
-      LevelPack(
+      PuzzlePack(
         type: type,
         cardCount: Int.random(in: 3...6),
         price: [50, 100, 150, 200].randomElement()!,
@@ -22,7 +30,7 @@ class ShopViewModel {
     }
   }
   
-  func purchase(_ pack: LevelPack) {
+  func purchase(_ pack: PuzzlePack) {
     purchasingPack = pack
     
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
